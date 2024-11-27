@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "44d0aebac6c86597",
+        "id": "73644de3a21598d6",
         "type": "tabs",
         "children": [
           {
-            "id": "7d39d4a7c904fae2",
+            "id": "1c38045179516add",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024/11/2024-11-26-obsidian.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2024-11-26-obsidian"
+              "title": "新标签页"
             }
           }
         ]
@@ -93,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024/11/2024-11-26-obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2024-11-26-obsidian 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -112,12 +107,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024/11/2024-11-26-obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2024-11-26-obsidian 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -139,10 +133,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024/11/2024-11-26-obsidian.md"
+                "file": "_posts/2024/11/未命名.md"
               },
               "icon": "lucide-list",
-              "title": "2024-11-26-obsidian 的大纲"
+              "title": "未命名 的大纲"
             }
           },
           {
@@ -173,10 +167,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1256c950990f793d",
+  "active": "b1993c326f3b286d",
   "lastOpenFiles": [
+    "_posts/2024/11/未命名.md",
     "_templates/post.md",
     "_posts/2024/11/2024-11-26-obsidian.md",
+    "about.md",
+    "index.md",
     "2024-11-26.md",
     "_posts/2019/12/2019-12-14-journey-begins.md",
     "_posts/2024/11",
@@ -186,8 +183,6 @@
     "未命名.canvas",
     "_posts/2019/12",
     "_posts/2019",
-    "index.md",
-    "about.md",
     "README.md",
     "Untitled.md"
   ]
