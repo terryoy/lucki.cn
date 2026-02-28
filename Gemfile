@@ -1,33 +1,20 @@
+# frozen_string_literal: true
+# ↑ 这一行是 Ruby 的标准写法，意思是文件中的字符串默认使用 UTF-8 编码，保持原样即可。
+
+# 指定 gem 包（Ruby 的代码库）的官方下载来源
 source "https://rubygems.org"
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-gem "jekyll", "~> 3.8.5"
-
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.0"
-
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
-
-# If you have any plugins, put them here!
+# 将所有 Jekyll 相关的插件都放在这个组里，这是推荐的做法，方便管理。
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
+  # 指定 Jekyll 核心库。我们不再使用 "github-pages" 这个大礼包，
+  # 而是直接指定 Jekyll 的版本，这样更灵活，可以避免与其他插件的依赖冲突。
+  # "~> 4.3" 表示使用 4.3 或更高但小于 5.0 的版本。
+  gem "jekyll", "~> 4.3"
+
+  # 添加 jekyll-feed 插件，用于生成 RSS 订阅源，对 SEO 友好。
+  # "github-pages" 包里默认包含了它，所以我们最好也手动加上。
+  gem "jekyll-feed"
+  
+  # 这就是我们需要的核心插件，用来加载您存放在 GitHub 上的自定义主题。
+  gem "jekyll-remote-theme"
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-# Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
-
-# 明确添加远程主题插件
-gem "jekyll-remote-theme" 
-
