@@ -17,4 +17,7 @@ group :jekyll_plugins do
   
   # 这就是我们需要的核心插件，用来加载您存放在 GitHub 上的自定义主题。
   gem "jekyll-remote-theme"
+
+  # jekyll-seo-tag 是 SEO 相关
+  gem "jekyll-seo-tag"
 end
